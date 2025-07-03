@@ -4,7 +4,7 @@ const buttonEqual = document.querySelector('#buttonEqual')
 
 const buttonAc = document.querySelector('#buttonAc')
 
-const buttonDel = document.querySelector('#buttonDel')
+const buttonDelete = document.querySelector('#buttonDel')
 
 const button = document.querySelectorAll('.button')
 
@@ -22,35 +22,53 @@ function adjustFontSize() {
     }
 }
 
-buttonEqual.onclick = () => {
-    if (currentDisplay.textContent.trim() === "") {
-        currentDisplay.textContent = "0"
-        return
-    }
-    try {
-        let result = eval(currentDisplay.textContent)
-        currentDisplay.textContent = parseFloat(result.toFixed(8))
-    }
-    catch {
-        currentDisplay.textContent = "Error"
+function equalButton() {
+    buttonEqual.onclick = () => {
+        if (currentDisplay.textContent.trim() === "") {
+            currentDisplay.textContent = "0"
+            return
+        }
+        try {
+            let result = eval(currentDisplay.textContent)
+            currentDisplay.textContent = parseFloat(result.toFixed(8))
+        }
+        catch {
+            currentDisplay.textContent = "Error"
+        }
     }
 }
 
-buttonAc.onclick = () => {
-    currentDisplay.textContent = ""
+function acButton() {
+    buttonAc.onclick = () => {
+        currentDisplay.textContent = ""
+    }
 }
 
-buttonDel.onclick = () => {
-    if (currentDisplay.textContent === "Error") {
-        currentDisplay.textContent = ''
-    }
-    else {
-        currentDisplay.textContent = currentDisplay.textContent.slice(0, -1)
+function delButton() {
+    buttonDelete.onclick = () => {
+        if (currentDisplay.textContent === "Error") {
+            currentDisplay.textContent = ''
+        }
+        else {
+            currentDisplay.textContent = currentDisplay.textContent.slice(0, -1)
+        }
     }
 }
 
 button.forEach((button) => {
-    button.onclick = () => {
-        adjustFontSize()
+    if (button.textContent == "AC") {
+        acButton()
+    }
+    else if(button.textContent == "DEL"){
+        delButton()
+    }
+    else if(button.textContent == "="){
+        equalButton()
+    }
+    else {
+        button.onclick = () => {
+            currentDisplay.textContent += button.textContent;
+            adjustFontSize()
+        }
     }
 })
