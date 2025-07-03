@@ -11,15 +11,23 @@ const button = document.querySelectorAll('.button')
 function adjustFontSize() {
     const length = currentDisplay.textContent.length;
 
-    if (length <= 9) {
+    if (length <= 8) {
         currentDisplay.style.fontSize = "75px";
-    } else if (length <= 12) {
+    } else if (length <= 11) {
         currentDisplay.style.fontSize = "60px";
-    } else if (length <= 15) {
+    } else if (length <= 14) {
         currentDisplay.style.fontSize = "48px";
     } else {
         currentDisplay.style.fontSize = "36px";
     }
+}
+
+function checkLength() {
+    if (currentDisplay.textContent.length >= 18) {
+        alert("Can't Enter More Than 18 Digits");
+        return false;
+    }
+    return true;
 }
 
 function equalButton() {
@@ -73,6 +81,7 @@ button.forEach((button) => {
     }
     else {
         button.onclick = () => {
+            if (!checkLength()) return;
             currentDisplay.textContent += button.textContent;
             adjustFontSize()
         }
