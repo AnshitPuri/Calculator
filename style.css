@@ -19,9 +19,19 @@
     height: 650px;
     width: 390px;
     padding: 20px;
-    border-radius: 30px;
+    border-radius: 40px;
     font-family: -apple-system, BlinkMacSystemFont;
+    position: absolute;
+}
+.containerCase{
+    height: 660px;
+    width: 400px;
+    background-color: #262626;
+    border-radius: 40px;
     box-shadow: 0px 0px 10px rgb(255, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .textArea{
     height: 150px;
