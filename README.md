@@ -15,3 +15,4 @@ A modern, responsive calculator built using **HTML**, **CSS**, and **JavaScript*
 - Input length capped at 18 digits
 - Handles `NaN`, `Infinity`, and invalid inputs
 
+![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=your-username.your-repo-name)
