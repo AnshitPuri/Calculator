@@ -93,14 +93,14 @@
 }
 .buttonNum:active,
 .buttonNum2:active {
-  background-color: #737373;
+  background-color: #262626;
 }
 
 .buttonOp:active {
-  background-color: #ffb84d;
+  background-color: #e18f1d;
 }
 
 .buttonOp2:active {
-  background-color: #d6d6d6;
+  background-color: #9b9c9c;
 }
 
