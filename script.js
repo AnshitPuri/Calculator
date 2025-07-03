@@ -1,7 +1,5 @@
 let currentDisplay = document.querySelector('#textAreaText')
 
-let buttonDivide = document.querySelector('#buttonDivide')
-
 let buttonEqual = document.querySelector('#buttonEqual')
 
 buttonEqual.onclick = () =>{
