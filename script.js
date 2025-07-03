@@ -23,8 +23,8 @@ function adjustFontSize() {
 }
 
 function checkLength() {
-    if (currentDisplay.textContent.length >= 18) {
-        alert("Can't Enter More Than 18 Digits");
+    if (currentDisplay.textContent.length >= 30) {
+        alert("Can't Enter More Than 30 Digits");
         return false;
     }
     return true;
