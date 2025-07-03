@@ -1,1 +1,3 @@
-Basic calculator with clean UI
+Calculator with basic UI
+
+![Calculator UI](calculator.png)
