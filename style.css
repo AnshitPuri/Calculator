@@ -83,4 +83,23 @@
 #button0{
     width: 170px;
     border-radius: 80px;
+    text-align: start;
+    padding-left: 30px;
 }
+.button:active {
+  transform: scale(0.95);
+  transition: transform 0.1s ease;
+}
+.buttonNum:active,
+.buttonNum2:active {
+  background-color: #737373;
+}
+
+.buttonOp:active {
+  background-color: #ffb84d;
+}
+
+.buttonOp2:active {
+  background-color: #d6d6d6;
+}
+
