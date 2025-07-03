@@ -49,6 +49,12 @@ function delButton() {
         if (currentDisplay.textContent === "Error") {
             currentDisplay.textContent = ''
         }
+        else if(currentDisplay.textContent === "Infinity"){
+            currentDisplay.textContent = ''
+        }
+        else if(currentDisplay.textContent === "NaN"){
+            currentDisplay.textContent = ''
+        }
         else {
             currentDisplay.textContent = currentDisplay.textContent.slice(0, -1)
         }
