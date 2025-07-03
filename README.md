@@ -2,7 +2,7 @@
 
 A modern, responsive calculator built using **HTML**, **CSS**, and **JavaScript**. Inspired by Apple’s calculator design — clean UI, dynamic font resizing, and error handling.
 
-![Calculator Screenshot](image.png) <!-- Replace with your actual image or Vercel preview link -->
+![Calculator Screenshot](image1.png)
 
 ---
 
