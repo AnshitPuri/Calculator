@@ -1,3 +1,3 @@
 Calculator with basic UI
 
-![Calculator UI](calculator.png)
+![Calculator UI](image.png)
