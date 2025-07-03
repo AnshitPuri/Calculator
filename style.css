@@ -65,11 +65,11 @@
     row-gap: 10px;
 }
 .operationArea button{
-    background-color: #f8a736;
+    background-color: #e18f1d;
     font-size: 40px;
 }
 .numberArea button{
-    background-color: #505050;
+    background-color:#262626;
 }
 .numberValue{
     display: flex;
@@ -78,7 +78,7 @@
     column-gap: 10px;
 }
 .numberOperations button{
-    background-color: #bdbdbd;
+    background-color: #9b9c9c;
     color: black;
 }
 #button0{
@@ -93,14 +93,14 @@
 }
 .buttonNum:active,
 .buttonNum2:active {
-  background-color: #262626;
+  background-color: #737373;
 }
 
 .buttonOp:active {
-  background-color: #e18f1d;
+  background-color: #ffb84d;
 }
 
 .buttonOp2:active {
-  background-color: #9b9c9c;
+  background-color: #d6d6d6;
 }
 
