@@ -38,7 +38,7 @@ function equalButton() {
         }
         try {
             let result = eval(currentDisplay.textContent)
-            currentDisplay.textContent = parseFloat(result.toFixed(8))
+            currentDisplay.textContent = parseFloat(result.toFixed(4))
         }
         catch {
             currentDisplay.textContent = "Error"
